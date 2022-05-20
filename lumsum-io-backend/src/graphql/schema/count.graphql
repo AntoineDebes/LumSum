@@ -1,7 +1,0 @@
-type Count {
-    visitors: Int!
-    users: Int!
-    suppliers: Int!
-    products: Int!
-    reviews: Int!
-}

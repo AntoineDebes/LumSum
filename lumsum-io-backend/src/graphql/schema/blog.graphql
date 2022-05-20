@@ -1,8 +1,0 @@
-type Blog {
-    id: ID!
-    slug: String!
-    title: String!
-    body: String!
-    cover: String!
-    thumbnail: String!
-}

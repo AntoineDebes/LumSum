@@ -1,4 +1,0 @@
-type ToggleFavoriteSupplierRes {
-  status: String!
-  supplier: Supplier!
-}

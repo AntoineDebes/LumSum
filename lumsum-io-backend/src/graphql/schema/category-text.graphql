@@ -1,4 +1,0 @@
-type CategoryText {
-  type: ID!
-  text: String!
-}

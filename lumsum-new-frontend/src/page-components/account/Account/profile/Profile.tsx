@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import Head from "next/head";
 import SidebarSecondary from "@/components/SidebarSecondary/SidebarSecondary";
 import InfoCardPlain from "@/components/InfoCardPlain/InfoCardPlain";
@@ -7,7 +7,7 @@ import ProfileSettingsModal from "@/components/ProfileSettingsModal/ProfileSetti
 import Container from "@/components/Container/Container";
 import ContainerMainContent from "@/components/ContainerMainContent/ContainerMainContent";
 import ContainerMainFixedAside from "@/components/ContainerMainFixedAside/ContainerMainFixedAside";
-import { useSession } from "next-auth/react"
+import { useSession } from "next-auth/react";
 import AuthMessage from "@/components/AuthMessage/AuthMessage";
 
 import iconAddresses from "@/assets/images/addresses.svg";
@@ -44,7 +44,6 @@ const menuList = [
 ];
 
 export const Profile: any = () => {
-
   const [IsProfileSettingsModalVisible, setIsProfileSettingsModalVisible] =
     useState(false);
 
@@ -60,50 +59,15 @@ export const Profile: any = () => {
     setIsProfileSettingsModalVisible(false);
   };
 
-  const userData = {
-    info: [
-      {
-        title: "Name",
-        text: "Mahmoud Elsoukie",
-      },
-      {
-        title: "Address",
-        text: "Umm Suqeim St - Dubai",
-      },
-      {
-        title: "Organization",
-        text: "RAK",
-      },
-      {
-        title: "Phone",
-        text: "+971-50-471-4556",
-      },
-      {
-        title: "Email",
-        text: "mahmoudelsoukie@rak.com",
-      },
-    ],
-    buttons: [
-      {
-        text: "Edit Profile",
-        theme: "primary",
-        onClickHandler: () => {
-          showProfileSettingsModal();
-        },
-      },
-    ],
-  };
-
-
   let { data: session, status } = useSession();
   const sessionStore = useAuthStore((state) => state.session);
   status = sessionStore ? "authenticated" : "unauthenticated";
 
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     if (!sessionStore) {
-      router.push('/');
+      router.push("/");
     }
   }, []);
 
@@ -113,11 +77,7 @@ export const Profile: any = () => {
   //   </AuthMessage>
   // }
   if (status === "unauthenticated") {
-    return (
-      <AuthMessage>
-        {/* <p>Access Denied</p> */}
-      </AuthMessage>
-    )
+    return <AuthMessage>{/* <p>Access Denied</p> */}</AuthMessage>;
   }
 
   return (

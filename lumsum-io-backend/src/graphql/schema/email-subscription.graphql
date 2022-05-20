@@ -1,6 +1,0 @@
-type ResEmailSubscribe {
-    id: ID!
-    email: EmailAddress!
-    isSubscribe: Boolean!
-    createdAt: String!
-}

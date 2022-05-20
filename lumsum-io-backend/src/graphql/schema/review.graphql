@@ -1,9 +1,0 @@
-type Review {
-    id: ID!
-    review: String!
-    rating: Float!
-    createdAt: String
-    updatedAt: String
-    reviewOn: Supplier!
-    reviewBy: Customer!
-}

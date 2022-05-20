@@ -1,5 +1,0 @@
-scalar Upload
-scalar URL
-scalar EmailAddress
-scalar NonEmptyString
-scalar PhoneNumber
