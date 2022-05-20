@@ -1,0 +1,56 @@
+.breadcrumb {
+    height: 256px;
+    background-image: url("/breadcrumb.jpg");
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    @media (max-width: 425px) {
+        padding: 15px;
+    }
+}
+
+.title {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-right: 2px;
+
+    a {
+        text-decoration: none;
+    }
+
+    span {
+        font-weight: 800;
+    }
+
+    a:hover,
+    a:focus {
+        color: var(--base-color);
+        text-decoration: underline;
+    }
+}

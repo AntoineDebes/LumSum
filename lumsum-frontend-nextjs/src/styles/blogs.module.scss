@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+}
+
+.inner {
+  max-width: var(--inner-max-width);
+  width: 100%;
+  margin: 60px auto;
+}
+
+.title {
+  color: #000;
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 36px;
+
+  @media (max-width: 640px) {
+    font-size: 32px;
+  }
+}
+
+.subtitle {
+  border-bottom: 5px solid var(--base-color);
+  padding-bottom: 10px;
+  padding-left: 5px;
+  font-weight: bolder;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+.cover {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

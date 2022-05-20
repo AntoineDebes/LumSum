@@ -1,0 +1,20 @@
+.rateWrap {
+    ul.ant-rate {
+        display: block;
+    }
+    @media (max-width: 640px) {
+        ul.ant-rate {
+            display: none;
+        }
+    }
+}
+
+.rateNumber {
+    display: none;
+    @media (max-width: 425px) {
+        display: block;
+    }
+}
+
+.stars {
+}

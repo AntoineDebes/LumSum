@@ -1,0 +1,5 @@
+id,email,password,name,lastLoggedin,role,access
+6fbd9ca4-eac6-462c-8565-f9d02484be62,sabinetest@gmail.com,$2a$10$9tBwO8FJKn5O3oK3iuSj/OTwWorX/96GgNr6Jun2Dxa0B2niOnu/m,1,2021-03-05 07:55:33.000000,ADMIN,REVOKE
+8add4962-ce3d-477a-94df-8d52531b7f4b,karsifisabine@gmail.com,$2a$10$2WhuXroa7QxPzLKKCVYB.OSCboBYKN6KA1iuIfn2DN2/ItVhsltYO,Sabine,2021-03-05 07:55:33.000000,ADMIN,GRANT
+928a2570-0d28-455d-be08-45178c850fb3,waseemansarmalik@gmail.com,$2a$10$87rmvBquT2yEMhnavUEMYe5r9fHTxYDAbwCAONVo9fo2SLFGDfWX6,Waseem Ansar,2021-09-29 17:53:27.460000,ADMIN,GRANT
+8ba111d7-1b0f-4867-b3e7-0fc42218b0f9,admin@gmail.com,$2a$10$AOR8mBU03tTqLtHw63A9cuQ1F66rZNomGZ0GPXsO0CjsmLZImg0qW,2,2021-10-02 10:26:24.313000,SUPER_ADMIN,GRANT

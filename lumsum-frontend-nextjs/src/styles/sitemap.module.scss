@@ -1,0 +1,17 @@
+.list {
+    padding-inline-start: 40px;
+
+    & > li > a {
+        color: var(--base-color);
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--base-color);
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding-inline-start: 20px;
+    }
+}

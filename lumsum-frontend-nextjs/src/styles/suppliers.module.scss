@@ -1,0 +1,181 @@
+.supplierContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px;
+}
+
+.supplier {
+  flex: 1;
+}
+
+.rightWrapper {
+  flex-basis: 200px;
+}
+
+.card {
+  max-width: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 8px #d6d6d6;
+  padding: 24px;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &:hover {
+    border-color: var(--base-color);
+    cursor: pointer;
+  }
+}
+
+.activeCard {
+  border-color: var(--base-color);
+  border-width: 2px;
+  position: relative;
+}
+
+.leftTopSpan {
+  position: absolute;
+  left: -4px;
+  top: -17px;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid var(--base-color);
+  transform: rotate(45deg);
+}
+
+.leftBottomSpan {
+  position: absolute;
+  left: -4px;
+  bottom: -17px;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid var(--base-color);
+  transform: rotate(-45deg);
+}
+
+.rightTopSpan {
+  position: absolute;
+  right: 0;
+  background-color: var(--base-color);
+  top: 5px;
+  color: #fff;
+  padding: 2px 4px;
+  font-size: 12px;
+}
+
+.rightBottomSpan {
+  position: absolute;
+  right: -4px;
+  bottom: -17px;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid var(--base-color);
+  transform: rotate(45deg);
+}
+
+.featuredSpan {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-right: 10px solid var(--base-color);
+}
+
+.name {
+  padding: 5px 0;
+  font-size: 22px;
+  font-weight: 600;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+.city {
+  color: var(--text-color-secondary);
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  font-size: 14px;
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
+}
+
+.rating {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avgRating {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--base-color);
+  margin-right: 10px;
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+.favorite {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  &:hover {
+    color: gray;
+    border-color: gray;
+  }
+  span {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .supplierContainer {
+    padding: 15px 0;
+    flex-direction: column;
+  }
+  .rightWrapper {
+    flex-basis: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex-direction: column-reverse;
+    padding: 15px;
+  }
+
+  .name {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .city {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .logo {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    object-position: center;
+  }
+}

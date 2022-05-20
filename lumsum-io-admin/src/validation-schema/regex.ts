@@ -1,0 +1,1 @@
+export const ID_MATCH_REGEX = /^[^\-]+[a-z0-9-]+[^\-\ ]$/;

@@ -1,0 +1,14 @@
+enum Role {
+  CUSTOMER
+  SUPPLIER
+}
+
+enum LoginType {
+    FACEBOOK
+    GOOGLE
+}
+
+enum AccessEnum {
+  GRANT
+  REVOKE
+}

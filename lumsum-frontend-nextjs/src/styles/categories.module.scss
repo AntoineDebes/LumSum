@@ -1,0 +1,27 @@
+.allCategories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px;
+}
+
+.filterContainer {
+    flex-basis: 360px;
+    padding: 0 10px;
+}
+
+.dataContainer {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.heading {
+    height: 36px;
+    border-bottom: 2px solid var(--base-color);
+    font-size: 20px;
+    color: var(--base-color);
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+

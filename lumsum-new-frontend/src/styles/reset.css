@@ -1,0 +1,20 @@
+/* resets not covered by antd */
+
+.ant-layout {
+  background: #fff;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: currentColor;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,42 @@
+.form {
+    width: 100%;
+}
+
+.emailInput {
+    width: 100%;
+    margin-bottom: 15px !important;
+    height: 36px;
+    border-radius: 2px;
+    padding: 0px 5px;
+    border: 1px solid red;
+}
+
+.subscribeNowBtn {
+    width: 100%;
+    min-width: 100px;
+    height: 36px;
+    padding: 0 15px;
+    display: block;
+    cursor: pointer;
+    border: 0px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background: linear-gradient(to right, black 50%, var(--base-color) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-position: left bottom;
+    }
+}
+
+.errorDisplayNone {
+   
+}

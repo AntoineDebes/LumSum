@@ -1,0 +1,11 @@
+type ChartData {
+    labels: [String!]!
+    dataset: Dataset!
+}
+
+type Dataset {
+    suppliers: [Int!]!
+    users: [Int!]!
+    categories: [Int!]!
+    products: [Int!]!
+}

@@ -1,0 +1,6 @@
+type Competition {
+    id: String!
+    name: String!
+    scores: Int!
+    images: Int!
+}
